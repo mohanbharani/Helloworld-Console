@@ -15,9 +15,9 @@ namespace HelloWorldRepo.Service.InterfaceService.Tests
         [TestMethod()]
         public void GetTextDataTest()
         {
-            DataService dataService = new DataService();
+            //DataService dataService = DataService.();
 
-            dataService.GetTextData();
+            //dataService.GetTextData();
 
 
             Assert.Fail();

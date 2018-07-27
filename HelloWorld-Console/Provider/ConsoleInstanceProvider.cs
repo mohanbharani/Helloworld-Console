@@ -8,8 +8,18 @@ using System.Threading.Tasks;
 
 namespace HelloWorld_Console.Provider
 {
-    public static class ConsoleInstanceProvider
+    public sealed class ConsoleInstanceProvider
     {
+        public static readonly ConsoleInstanceProvider instanceProvider = new ConsoleInstanceProvider();
+
+        public ConsoleInstanceProvider GetInstance
+        {
+            get { return instanceProvider; }
+        }
+        private ConsoleInstanceProvider()
+        {
+
+        }
 
         public static IRestClient GetRestClient()
         {

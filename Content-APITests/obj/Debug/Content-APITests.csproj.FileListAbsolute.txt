@@ -27,3 +27,4 @@ C:\Users\Arjun\source\repos\HelloWorld-Console\Content-APITests\obj\Debug\Conten
 C:\Users\Arjun\source\repos\HelloWorld-Console\Content-APITests\obj\Debug\Content-APITests.dll
 C:\Users\Arjun\source\repos\HelloWorld-Console\Content-APITests\obj\Debug\Content-APITests.pdb
 C:\Users\Arjun\source\repos\HelloWorld-Console\Content-APITests\bin\Debug\Data\TextData.txt
+C:\Users\Arjun\source\repos\HelloWorld-Console\Content-APITests\bin\Debug\Content-APITests.dll.config

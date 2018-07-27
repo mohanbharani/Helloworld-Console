@@ -8,8 +8,19 @@ using System.Threading.Tasks;
 
 namespace HelloWorldRepo.Provider
 {
-    public static class InstanceProvider
+    public sealed class InstanceProvider
     {
+
+        private static InstanceProvider instanceProvider = null;
+
+        public InstanceProvider GetInstanceProvider
+        {
+            get
+            {
+                return new InstanceProvider();
+            }
+        }
+        private InstanceProvider() { }
         public static IAppSetting GetAppSetting()
         {
             return new AppSetting();
