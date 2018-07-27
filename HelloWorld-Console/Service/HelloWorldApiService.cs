@@ -26,40 +26,54 @@ namespace HelloWorld_Console.Service
         }
 
 
-        public TextDataModel GetTodaysData()
+        public TextDataModel GetTextData()
         {
-            TextDataModel textData = null;
-
-            this.restRequest.Resource = "HelloWorldAPI";
-            this.restRequest.Method = Method.GET;
-            this.restClient.BaseUrl = this.appSettings.GetAppSetting("HelloWorldAPIURL");
-            
-            this.restRequest.Parameters.Clear();
-
-            
-            var textDataModel = this.restClient.Execute<TextDataModel>(this.restRequest);
-
-            
-            if (textDataModel != null)
+            try
             {
-                
-                if (textDataModel.Data != null)
+                TextDataModel textData = null;
+
+                this.restRequest.Resource = "HelloWorldAPI";
+                this.restRequest.Method = Method.GET;
+                this.restClient.BaseUrl = this.appSettings.GetAppSetting("HelloWorldAPIURL");
+
+                this.restRequest.Parameters.Clear();
+
+
+                var textDataModel = this.restClient.Execute<TextDataModel>(this.restRequest);
+
+
+                if (textDataModel != null)
                 {
-                    textData = textDataModel.Data;
+
+                    if (textDataModel.Data != null)
+                    {
+                        textData = textDataModel.Data;
+                    }
+                    else
+                    {
+                        var errorDetail = string.IsNullOrWhiteSpace(textDataModel.Content) ? textDataModel.ErrorMessage : textDataModel.Content;
+
+                        
+                            var errorMessage = " Error message : "
+                                           + errorDetail + "\n\r HTTP Status Description : "
+                                           + textDataModel.StatusDescription;
+
+                            throw new Exception(errorMessage);
+                        
+                    }
                 }
                 else
                 {
-                   
-                    
-                }
-            }
-            else
-            {
-                // Log the exception
-                
-            }
+                    //IF Exception throw and log
 
-            return textData;
+                }
+
+                return textData;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
     }

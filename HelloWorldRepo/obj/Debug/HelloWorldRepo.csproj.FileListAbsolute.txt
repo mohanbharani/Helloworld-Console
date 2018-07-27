@@ -1,7 +1,8 @@
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\obj\Debug\HelloWorldRepo.csproj.CoreCompileInputs.cache
-C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\bin\Debug\Data\TextData.txt
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\bin\Debug\HelloWorldRepo.dll.config
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\bin\Debug\HelloWorldRepo.dll
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\bin\Debug\HelloWorldRepo.pdb
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\obj\Debug\HelloWorldRepo.dll
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\obj\Debug\HelloWorldRepo.pdb
+C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\obj\Debug\HelloWorldRepo.csprojResolveAssemblyReference.cache
+C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorldRepo\bin\Debug\Data\TextData.txt

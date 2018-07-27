@@ -12,14 +12,23 @@ namespace HelloWorld_Console
     {
         public static void Main(string[] args)
         {
-            IHelloWorldApiService helloWorldApiService = ConsoleInstanceProvider.GetApiService();
+            try
+            {
+                
+                IHelloWorldApiService helloWorldApiService = ConsoleInstanceProvider.GetApiService();
 
-            var dataModel = helloWorldApiService.GetTodaysData();
+                var textDataModel = helloWorldApiService.GetTextData();
 
-            Console.WriteLine(dataModel != null ? dataModel.Data : "No data was found!", null);
+                Console.WriteLine(textDataModel != null ? textDataModel.Data : "No data was found!", null);
 
-            Console.ReadLine();
+                Console.ReadLine();
 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.ReadLine();
+            }
         }
     }
 }

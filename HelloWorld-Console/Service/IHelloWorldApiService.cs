@@ -10,6 +10,6 @@ namespace HelloWorld_Console.Service
     public interface IHelloWorldApiService
     {
 
-        TextDataModel GetTodaysData();
+        TextDataModel GetTextData();
     }
 }

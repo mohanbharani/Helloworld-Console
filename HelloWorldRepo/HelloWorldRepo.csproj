@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\TextData.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup />

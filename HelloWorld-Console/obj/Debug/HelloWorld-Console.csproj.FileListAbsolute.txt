@@ -8,7 +8,7 @@ C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\obj\Debug\Hell
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\obj\Debug\HelloWorld-Console.csproj.CopyComplete
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\obj\Debug\HelloWorld-Console.exe
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\obj\Debug\HelloWorld-Console.pdb
-C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\bin\Debug\Data\TextData.txt
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\bin\Debug\HelloWorldRepo.dll
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\bin\Debug\HelloWorldRepo.pdb
 C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\bin\Debug\HelloWorldRepo.dll.config
+C:\Users\Arjun\source\repos\HelloWorld-Console\HelloWorld-Console\bin\Debug\Data\TextData.txt

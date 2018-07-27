@@ -13,8 +13,19 @@ namespace HelloWorldRepo.Service
     {
        public string ReadFile(string filePath)
         {
-            string text = File.ReadAllText(filePath, Encoding.UTF8);
-            return text;
+            try
+            {
+                string text = File.ReadAllText(filePath, Encoding.UTF8);
+                return text;
+            }
+            catch(FieldAccessException fa)
+            {
+                throw fa;
+            }
+            //catch
+            //{
+            //    throw new Exception("Un-Handled Exception From FileIOService");
+            //}
         }
     }
 }

@@ -12,7 +12,18 @@ namespace HelloWorldRepo.Service
     {
         public string GetAppSetting(string key)
         {
-            return ConfigurationManager.AppSettings.Get(key);
+            try
+            {
+                return ConfigurationManager.AppSettings.Get(key);
+            }
+            catch(NullReferenceException nr)
+            {
+                throw nr;
+            }
+            catch
+            {
+                throw new Exception("Un-handled Exception From AppSetting");
+            }
         }
     }
 }

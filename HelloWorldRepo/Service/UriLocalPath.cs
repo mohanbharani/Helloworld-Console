@@ -13,12 +13,23 @@ namespace HelloWorldRepo.Service
     {
         public string GetLocalPath(string fileName)
         {
+            try 
+            {
+                string path;
+                path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase) + fileName;
+                string localPath = new Uri(path).LocalPath;
 
-            string path;
-            path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase) + fileName;
-            string localPath = new Uri(path).LocalPath;
-
-            return localPath;
+                return localPath;
+            }
+            catch(FileNotFoundException fx)
+            {
+                // fx.Message;
+                throw fx;
+            }
+            catch
+            {
+                throw new Exception("Un-Handled Exception from UriLocalPath");
+            }
         }
     }
 }
